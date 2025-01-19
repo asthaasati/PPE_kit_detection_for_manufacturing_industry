@@ -10,7 +10,7 @@ from playsound import playsound  # Import for playing sound
 # Function to play alert sound in a loop
 def play_alert():
     while alert_playing:
-        playsound("alert.mp3", block=True)
+        playsound("alert-109578.mp3", block=True)
 
 # Choose video or camera
 choice = input("Enter '1' for Camera or '2' for Video: ")

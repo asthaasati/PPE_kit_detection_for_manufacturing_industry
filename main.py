@@ -54,6 +54,6 @@ def ppe_detection(file):
 
 if __name__ == "__main__":
     #file = r"F:\Computer_vision\PPE_detection_YOLO\Videos\ppe-1.mp4"
-    file = r"F:\Computer_vision\PPE_detection_YOLO\Videos\ppe-2.mp4"
+    file = r"C:\Users\asati\OneDrive\Desktop\okjsj\PPE-detection\Videos\ppe-1.mp4"
     ppe_detection(file)
 

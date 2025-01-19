@@ -10,7 +10,7 @@ from playsound import playsound  # Import for playing sound
 # Function to play alert sound in a loop
 def play_alert():
     while alert_playing:
-       playsound("alert.wav",block=True)
+        playsound("alert.wav", block=True)
 
 # Choose video or camera
 choice = input("Enter '1' for Camera or '2' for Video: ")
@@ -33,12 +33,12 @@ else:
 model = YOLO("best.pt")
 
 # Define class names
-classNames = ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask', 'NO-Safety Vest', 'Person', 'Safety Cone','Safety Vest', 'machinery', 'vehicle']
+classNames = ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask', 'NO-Safety Vest', 'Person', 'Safety Cone', 'Safety Vest', 'machinery', 'vehicle']
 
 prev_frame_time = 0
 new_frame_time = 0
 fps = 0  # Initialize fps variable
-alert_playing =False  # Flag to check if the alert sound is playing
+alert_playing = False  # Flag to check if the alert sound is playing
 alert_thread = None  # Thread for playing the alert sound
 
 # Check if camera or video is opened

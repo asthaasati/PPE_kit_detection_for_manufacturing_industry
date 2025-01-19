@@ -8,7 +8,7 @@ from playsound import playsound  # Import for playing sound
 # Function to play alert sound in a loop
 def play_alert():
     while alert_playing:
-        playsound("/Users/sahithichimata/Downloads/PPE_detection_Kit-main/alert.mp3", block=False)
+        playsound("alert-109578.mp3", block=False)
 
 # Choose video or camera
 choice = input("Enter '1' for Camera or '2' for Video: ")
@@ -28,7 +28,7 @@ else:
     exit()
 
 # Load the YOLO model
-model = YOLO("/Users/ayishakhanmj/Downloads/PPE_detection_Kit-main/yolov8s_custom.pt")
+model = YOLO(r"C:\Users\asati\OneDrive\Desktop\okjsj\PPE-detection\yolov8l.pt")
 
 # Define class names
 classNames = ['NO-Mask', 'Gloves', 'NO-Hardhat', 'Hardhat', 'NO-Safety Vest','NO-GLoves', 'Person', 'Safety Cone','Safety Vest', 'machinery', 'vehicle']
